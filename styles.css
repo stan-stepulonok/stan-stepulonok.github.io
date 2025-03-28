@@ -1,0 +1,248 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2f74b8;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #2f74b8;
+}
+
+main {
+    margin-top: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.section, .qa-section {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2f74b8;
+}
+
+.toggle-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.expand-btn {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.expand-btn:hover {
+    color: #3498db;
+}
+
+.qa-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.qa-content.show {
+    display: block;
+}
+
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project span {
+    flex-grow: 1;
+}
+
+.fixed-size-btn {
+    background-color: #699ccf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.fixed-size-btn:hover {
+    background-color: #2980b9;
+}
+
+#contact {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-info a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-info i {
+    font-size: 30px;
+    color: #2f74b8;
+}
+
+.contact-info i:hover {
+    color: #3498db;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #2f74b8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    nav button {
+        width: auto;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+}
